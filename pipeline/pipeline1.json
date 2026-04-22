@@ -59,8 +59,31 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Copy data1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
 			}
 		],
+		"variables": {
+			"name": {
+				"type": "String",
+				"defaultValue": "defaultfile"
+			}
+		},
 		"annotations": []
 	}
 }

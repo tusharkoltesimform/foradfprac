@@ -1,0 +1,37 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "orders1.csv",
+				"folderPath": "pracdata",
+				"fileSystem": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "OrderID",
+				"type": "String"
+			},
+			{
+				"name": "CustomerID",
+				"type": "String"
+			},
+			{
+				"name": "Amount",
+				"type": "String"
+			}
+		]
+	}
+}

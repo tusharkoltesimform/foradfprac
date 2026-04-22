@@ -1,0 +1,9 @@
+{
+	"name": "sixthprac",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b9483895-c2e2-41a2-a8a8-f496df50e800",
+		"tenantId": "dbdb17eb-72fa-4d47-a8d0-81b65e8a0a2c"
+	}
+}
